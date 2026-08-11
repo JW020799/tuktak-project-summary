@@ -11,6 +11,7 @@ TUKTAK은 사용자가 수리 사진과 설명을 입력하면 AI 견적서, 리
 
 | Repository | Description |
 | --- | --- |
+| https://github.com/JW020799/tuktak-ai-service-practice | AI Service 배포 연습 |
 | https://github.com/TUKTAKxAI/TUKTAK_Backend | Main Backend |
 | https://github.com/TUKTAKxAI/TUKTAK_AI_Service | AI Service |
 | https://github.com/TUKTAKxAI/TUKTAK_Frontend | Frontend |
