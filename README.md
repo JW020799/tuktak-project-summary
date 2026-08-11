@@ -139,6 +139,22 @@ RAG 검색은 잘못된 근거 문서가 통과되는 것보다, 관련성이 �
 
 ---
 
+## Validation Reports
+
+TUKTAK의 AI 기능은 모델을 단순히 호출하는 방식이 아니라, 입력 검증과 검색 실패 조건까지 함께 고려해 설계했습니다.
+
+| Area | Decision | Key Result |
+| --- | --- | --- |
+| Risk Report RAG | `jhgan/ko-sroberta-multitask` + ChromaDB | 71개 RAG 문서 기반, Top-K 3, UNKNOWN 3개 이상이면 FAILED |
+| Text Validity | Rule-Engine | 명확한 욕설/스팸/형식 오류는 Rule Engine 처리, 애매한 문장은 NLP 전달 |
+| Image Quality | OpenCV baseline 단기 채택 후보 | 순수 실사 기준 커스텀 분류기와 통계적 동률, 비용/속도/설명가능성 우수 |
+
+Detailed validation summary:
+
+- [AI Validation Summary](docs/validation-summary.md)
+
+---
+
 ## Tech Stack
 
 | Area | Stack |
